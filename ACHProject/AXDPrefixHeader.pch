@@ -1,0 +1,36 @@
+//
+//  AXDPrefixHeader.pch
+//  ACHProject
+//
+//  Created by 爱享到 on 2017/7/25.
+//  Copyright © 2017年 爱享到. All rights reserved.
+//
+
+#ifndef AXDPrefixHeader_pch
+#define AXDPrefixHeader_pch
+
+/****OC*****/
+
+//在#ifdef __OBJC__ 和 #endif 之间的内容 ，只会拷贝到OC源代码文件中，不会拷贝到其他语言的源代码文件中
+#ifdef __OBJC__
+
+
+/****打印*****/
+#ifndef DEBUG
+#define AXDLog(...) NSLog(__VA_ARGS__)
+#else
+#define AXDLog(...)
+#endif
+
+/****颜色*****/
+#define AXDColorA(r,g,b,a)  [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a/255.0]
+#define AXDColor(r,g,b)     AXDColorA((r) ,(g) ,(b) ,255)
+#define AXDRandomColor      AXDColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+
+
+
+
+#endif
+
+
+#endif /* AXDPrefixHeader_pch */
