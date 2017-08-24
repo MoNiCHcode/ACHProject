@@ -82,7 +82,7 @@ blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
 
 
 #define kSetPlaceholderColor   @"_placeholderLabel.textColor"  //修改默认字体颜色
-
+#define FontSize(S)[UIFont fontWithName:@"FZXiHei--YS1-0" size:S]
 
 
 

@@ -18,7 +18,6 @@
 		FD49E9321F4D6B8B002B8736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9301F4D6B8B002B8736 /* main.m */; };
 		FD49E9C21F4D7E48002B8736 /* AXDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9BF1F4D7E48002B8736 /* AXDTabBar.m */; };
 		FD49E9C31F4D7E48002B8736 /* AXDTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */; };
-		FD745F601F4E72C5008D7086 /* CFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD745F5F1F4E72C5008D7086 /* CFGuideViewController.m */; };
 		FD745F6E1F4E73A6008D7086 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD745F631F4E73A6008D7086 /* default@2x.png */; };
 		FD745F6F1F4E73A6008D7086 /* GUIDE1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD745F641F4E73A6008D7086 /* GUIDE1.jpg */; };
 		FD745F701F4E73A6008D7086 /* GUIDE2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD745F651F4E73A6008D7086 /* GUIDE2.jpg */; };
@@ -28,8 +27,9 @@
 		FD745F771F4E73A6008D7086 /* launchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD745F6C1F4E73A6008D7086 /* launchImage@2x.png */; };
 		FD745F781F4E73A6008D7086 /* Launchwgss@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD745F6D1F4E73A6008D7086 /* Launchwgss@2x.png */; };
 		FD745FA71F4E757A008D7086 /* UIView+FrameExt.m in Sources */ = {isa = PBXBuildFile; fileRef = FD745F841F4E757A008D7086 /* UIView+FrameExt.m */; };
-		FD8DC6471F4E845B0036D193 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6461F4E845B0036D193 /* BaseViewController.m */; };
-		FD8DC64A1F4E84920036D193 /* CFNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6491F4E84920036D193 /* CFNavigationBar.m */; };
+		FD8DC6501F4EA0F60036D193 /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC64F1F4EA0F60036D193 /* AnimationView.m */; };
+		FD8DC6531F4EA7410036D193 /* AXDNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6521F4EA7410036D193 /* AXDNavigationBarView.m */; };
+		FD8DC6561F4EA7960036D193 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6551F4EA7960036D193 /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +75,6 @@
 		FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXDTabbarController.m; sourceTree = "<group>"; };
 		FD49E9C61F4D8256002B8736 /* MuchHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuchHead.h; sourceTree = "<group>"; };
 		FD49EA2D1F4D89D9002B8736 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
-		FD745F5E1F4E72C5008D7086 /* CFGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFGuideViewController.h; sourceTree = "<group>"; };
-		FD745F5F1F4E72C5008D7086 /* CFGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFGuideViewController.m; sourceTree = "<group>"; };
 		FD745F631F4E73A6008D7086 /* default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default@2x.png"; sourceTree = "<group>"; };
 		FD745F641F4E73A6008D7086 /* GUIDE1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GUIDE1.jpg; sourceTree = "<group>"; };
 		FD745F651F4E73A6008D7086 /* GUIDE2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GUIDE2.jpg; sourceTree = "<group>"; };
@@ -88,10 +86,13 @@
 		FD745F831F4E757A008D7086 /* UIView+FrameExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameExt.h"; sourceTree = "<group>"; };
 		FD745F841F4E757A008D7086 /* UIView+FrameExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameExt.m"; sourceTree = "<group>"; };
 		FD745FB61F4E7A1D008D7086 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		FD8DC6451F4E845B0036D193 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
-		FD8DC6461F4E845B0036D193 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
-		FD8DC6481F4E84920036D193 /* CFNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFNavigationBar.h; sourceTree = "<group>"; };
-		FD8DC6491F4E84920036D193 /* CFNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFNavigationBar.m; sourceTree = "<group>"; };
+		FD8DC64E1F4EA0F60036D193 /* AnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationView.h; sourceTree = "<group>"; };
+		FD8DC64F1F4EA0F60036D193 /* AnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationView.m; sourceTree = "<group>"; };
+		FD8DC6511F4EA7410036D193 /* AXDNavigationBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXDNavigationBarView.h; sourceTree = "<group>"; };
+		FD8DC6521F4EA7410036D193 /* AXDNavigationBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXDNavigationBarView.m; sourceTree = "<group>"; };
+		FD8DC6541F4EA7960036D193 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		FD8DC6551F4EA7960036D193 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		FD8DC6571F4EAC030036D193 /* NotificationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,10 +254,10 @@
 				FD49E9BF1F4D7E48002B8736 /* AXDTabBar.m */,
 				FD49E9C01F4D7E48002B8736 /* AXDTabbarController.h */,
 				FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */,
-				FD8DC6481F4E84920036D193 /* CFNavigationBar.h */,
-				FD8DC6491F4E84920036D193 /* CFNavigationBar.m */,
-				FD8DC6451F4E845B0036D193 /* BaseViewController.h */,
-				FD8DC6461F4E845B0036D193 /* BaseViewController.m */,
+				FD8DC6511F4EA7410036D193 /* AXDNavigationBarView.h */,
+				FD8DC6521F4EA7410036D193 /* AXDNavigationBarView.m */,
+				FD8DC6541F4EA7960036D193 /* BaseViewController.h */,
+				FD8DC6551F4EA7960036D193 /* BaseViewController.m */,
 			);
 			path = RootVC;
 			sourceTree = "<group>";
@@ -266,6 +267,7 @@
 			children = (
 				FD49E9C61F4D8256002B8736 /* MuchHead.h */,
 				FD745FB61F4E7A1D008D7086 /* Helper.h */,
+				FD8DC6571F4EAC030036D193 /* NotificationName.h */,
 			);
 			path = AXDSettings;
 			sourceTree = "<group>";
@@ -274,8 +276,8 @@
 			isa = PBXGroup;
 			children = (
 				FD745F621F4E73A6008D7086 /* welcome */,
-				FD745F5E1F4E72C5008D7086 /* CFGuideViewController.h */,
-				FD745F5F1F4E72C5008D7086 /* CFGuideViewController.m */,
+				FD8DC64E1F4EA0F60036D193 /* AnimationView.h */,
+				FD8DC64F1F4EA0F60036D193 /* AnimationView.m */,
 			);
 			path = GuidePage;
 			sourceTree = "<group>";
@@ -510,10 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD8DC64A1F4E84920036D193 /* CFNavigationBar.m in Sources */,
+				FD8DC6501F4EA0F60036D193 /* AnimationView.m in Sources */,
+				FD8DC6561F4EA7960036D193 /* BaseViewController.m in Sources */,
 				FD745FA71F4E757A008D7086 /* UIView+FrameExt.m in Sources */,
-				FD8DC6471F4E845B0036D193 /* BaseViewController.m in Sources */,
-				FD745F601F4E72C5008D7086 /* CFGuideViewController.m in Sources */,
+				FD8DC6531F4EA7410036D193 /* AXDNavigationBarView.m in Sources */,
 				FD49E9251F4D6245002B8736 /* ACHProject.xcdatamodeld in Sources */,
 				FD49E9311F4D6B8B002B8736 /* AppDelegate.m in Sources */,
 				FD49E9321F4D6B8B002B8736 /* main.m in Sources */,
