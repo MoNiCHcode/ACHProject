@@ -95,6 +95,6 @@
 
 - (void)changeControll
 {
-//    KEY_WINDOW.rootViewController = [MainStoryBoard instantiateViewControllerWithIdentifier:@"ViewController"];
+    KEY_WINDOW.rootViewController = [MainStoryBoard instantiateViewControllerWithIdentifier:@"ViewController"];
 }
 @end
