@@ -9,9 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
+@class AXDTabbarController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) AXDTabbarController *axdTabBarController;
 
 @property (readonly, strong) NSPersistentContainer *persistentContainer;
 

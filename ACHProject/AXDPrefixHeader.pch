@@ -17,6 +17,7 @@
 #import "MuchHead.h"
 #import "Helper.h"
 #import "NotificationName.h"
+#import "CommondTools.h"
 
 #endif
 

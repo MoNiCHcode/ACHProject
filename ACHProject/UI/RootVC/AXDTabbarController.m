@@ -33,29 +33,6 @@
 
 @implementation AXDTabbarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    /****统一属性****/
-    UITabBarItem *item = [UITabBarItem appearance];
-    /****设置没选中的item文字属性****/
-    NSMutableDictionary *attributDic = [NSMutableDictionary new];
-    NSMutableDictionary *selectAttributDic = [NSMutableDictionary new];
-    
-    attributDic[NSFontAttributeName] = [UIFont systemFontOfSize:14]; //设置属性字体
-//    attributDic[NSForegroundColorAttributeName] = [UIColor blackColor]; //设置属性背景色
-    [item setTitleTextAttributes:attributDic forState:UIControlStateNormal];
-    
-    /****设置选中状态下的文字属性****/
-    selectAttributDic[NSFontAttributeName] = [UIFont systemFontOfSize:14];
-    selectAttributDic[NSForegroundColorAttributeName] = [UIColor redColor];
-    [item setTitleTextAttributes:selectAttributDic forState:UIControlStateSelected];
-    
-
-    
-}
-
 
 
 -(id)init
@@ -66,7 +43,7 @@
         self.tabBar.hidden=YES;
         
         
-        _tabBarHight=49;
+        _tabBarHight=50;
         _itemWidth=22;
         _lastIndex=0;
         _insertY=(_tabBarHight-_itemWidth-14-1)/2.0;
@@ -371,7 +348,16 @@
 
 
 
-
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+//    [CommondTools gotoMainVC];
+    
+    
+}
 
 
 
@@ -413,15 +399,6 @@
     [self addChildViewController:vc];
     
 }
-
-
-
-
-
-
-
-
-
 
 
 

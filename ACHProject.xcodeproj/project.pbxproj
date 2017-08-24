@@ -13,10 +13,11 @@
 		1B435D9A1F0C79AF00CADBF5 /* ACHProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B435D991F0C79AF00CADBF5 /* ACHProjectTests.m */; };
 		1B435DA51F0C79AF00CADBF5 /* ACHProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B435DA41F0C79AF00CADBF5 /* ACHProjectUITests.m */; };
 		88ACFEF278695CB777D3AA29 /* libPods-ACHProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BE148995B399C572A52F0C /* libPods-ACHProject.a */; };
+		FD246F581F4EDA0800BC757C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD246F571F4EDA0800BC757C /* LoginViewController.m */; };
+		FD246F5B1F4EDA1A00BC757C /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD246F5A1F4EDA1A00BC757C /* RegistViewController.m */; };
 		FD49E9251F4D6245002B8736 /* ACHProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9201F4D6245002B8736 /* ACHProject.xcdatamodeld */; };
 		FD49E9311F4D6B8B002B8736 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E92F1F4D6B8B002B8736 /* AppDelegate.m */; };
 		FD49E9321F4D6B8B002B8736 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9301F4D6B8B002B8736 /* main.m */; };
-		FD49E9C21F4D7E48002B8736 /* AXDTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9BF1F4D7E48002B8736 /* AXDTabBar.m */; };
 		FD49E9C31F4D7E48002B8736 /* AXDTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */; };
 		FD745F6E1F4E73A6008D7086 /* default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD745F631F4E73A6008D7086 /* default@2x.png */; };
 		FD745F6F1F4E73A6008D7086 /* GUIDE1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD745F641F4E73A6008D7086 /* GUIDE1.jpg */; };
@@ -30,6 +31,11 @@
 		FD8DC6501F4EA0F60036D193 /* AnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC64F1F4EA0F60036D193 /* AnimationView.m */; };
 		FD8DC6531F4EA7410036D193 /* AXDNavigationBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6521F4EA7410036D193 /* AXDNavigationBarView.m */; };
 		FD8DC6561F4EA7960036D193 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6551F4EA7960036D193 /* BaseViewController.m */; };
+		FD8DC65B1F4EAE380036D193 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC65A1F4EAE380036D193 /* HomeViewController.m */; };
+		FD8DC65F1F4EB07C0036D193 /* FightGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC65E1F4EB07C0036D193 /* FightGroupViewController.m */; };
+		FD8DC6631F4EB0BD0036D193 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6621F4EB0BD0036D193 /* MineViewController.m */; };
+		FD8DC6671F4EBBAA0036D193 /* CommondTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6661F4EBBAA0036D193 /* CommondTools.m */; };
+		FD8DC66A1F4EBFFD0036D193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8DC6691F4EBFFD0036D193 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,12 +71,14 @@
 		1B56FDD81F2736FD00D795B8 /* AXDPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXDPrefixHeader.pch; sourceTree = "<group>"; };
 		4AE9431428C05CAA6BA3737D /* Pods-ACHProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACHProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ACHProject/Pods-ACHProject.debug.xcconfig"; sourceTree = "<group>"; };
 		C6C3C96A862F8057EBA91D12 /* Pods-ACHProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ACHProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-ACHProject/Pods-ACHProject.release.xcconfig"; sourceTree = "<group>"; };
+		FD246F561F4EDA0800BC757C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		FD246F571F4EDA0800BC757C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		FD246F591F4EDA1A00BC757C /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		FD246F5A1F4EDA1A00BC757C /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		FD49E9211F4D6245002B8736 /* ACHProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ACHProject.xcdatamodel; sourceTree = "<group>"; };
-		FD49E92E1F4D6B8B002B8736 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FD49E92F1F4D6B8B002B8736 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD49E92E1F4D6B8B002B8736 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
+		FD49E92F1F4D6B8B002B8736 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
 		FD49E9301F4D6B8B002B8736 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD49E9BE1F4D7E48002B8736 /* AXDTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXDTabBar.h; sourceTree = "<group>"; };
-		FD49E9BF1F4D7E48002B8736 /* AXDTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXDTabBar.m; sourceTree = "<group>"; };
 		FD49E9C01F4D7E48002B8736 /* AXDTabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXDTabbarController.h; sourceTree = "<group>"; };
 		FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXDTabbarController.m; sourceTree = "<group>"; };
 		FD49E9C61F4D8256002B8736 /* MuchHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MuchHead.h; sourceTree = "<group>"; };
@@ -93,6 +101,16 @@
 		FD8DC6541F4EA7960036D193 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		FD8DC6551F4EA7960036D193 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		FD8DC6571F4EAC030036D193 /* NotificationName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationName.h; sourceTree = "<group>"; };
+		FD8DC6591F4EAE380036D193 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FD8DC65A1F4EAE380036D193 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FD8DC65D1F4EB07C0036D193 /* FightGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FightGroupViewController.h; sourceTree = "<group>"; };
+		FD8DC65E1F4EB07C0036D193 /* FightGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FightGroupViewController.m; sourceTree = "<group>"; };
+		FD8DC6611F4EB0BD0036D193 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		FD8DC6621F4EB0BD0036D193 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		FD8DC6651F4EBBAA0036D193 /* CommondTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommondTools.h; sourceTree = "<group>"; };
+		FD8DC6661F4EBBAA0036D193 /* CommondTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommondTools.m; sourceTree = "<group>"; };
+		FD8DC6681F4EBFFD0036D193 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FD8DC6691F4EBFFD0036D193 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				FD49E9201F4D6245002B8736 /* ACHProject.xcdatamodeld */,
-				FD49E92E1F4D6B8B002B8736 /* AppDelegate.h */,
-				FD49E92F1F4D6B8B002B8736 /* AppDelegate.m */,
+				FD8DC6681F4EBFFD0036D193 /* ViewController.h */,
+				FD8DC6691F4EBFFD0036D193 /* ViewController.m */,
 				FD49E9301F4D6B8B002B8736 /* main.m */,
 				1B435D851F0C79AF00CADBF5 /* Main.storyboard */,
 				1B435D8B1F0C79AF00CADBF5 /* Assets.xcassets */,
@@ -206,12 +224,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FD246F551F4ED9B800BC757C /* LoginController */ = {
+			isa = PBXGroup;
+			children = (
+				FD246F561F4EDA0800BC757C /* LoginViewController.h */,
+				FD246F571F4EDA0800BC757C /* LoginViewController.m */,
+				FD246F591F4EDA1A00BC757C /* RegistViewController.h */,
+				FD246F5A1F4EDA1A00BC757C /* RegistViewController.m */,
+			);
+			path = LoginController;
+			sourceTree = "<group>";
+		};
 		FD49E91B1F4D5BE8002B8736 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FD49E92E1F4D6B8B002B8736 /* AppDelegate.h */,
+				FD49E92F1F4D6B8B002B8736 /* AppDelegate.m */,
 				FD745F5D1F4E72C5008D7086 /* GuidePage */,
-				FD49E9B31F4D7CBF002B8736 /* 拼团 */,
 				FD49E9B41F4D7CBF002B8736 /* 首页 */,
+				FD49E9B31F4D7CBF002B8736 /* 拼团 */,
 				FD49E9B51F4D7CBF002B8736 /* 我的 */,
 				FD49E9BD1F4D7E48002B8736 /* RootVC */,
 			);
@@ -221,6 +252,7 @@
 		FD49E9B31F4D7CBF002B8736 /* 拼团 */ = {
 			isa = PBXGroup;
 			children = (
+				FD8DC65C1F4EAF890036D193 /* Controller */,
 			);
 			path = "拼团";
 			sourceTree = "<group>";
@@ -228,6 +260,7 @@
 		FD49E9B41F4D7CBF002B8736 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
+				FD8DC6581F4EAE290036D193 /* Controller */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -235,6 +268,7 @@
 		FD49E9B51F4D7CBF002B8736 /* 我的 */ = {
 			isa = PBXGroup;
 			children = (
+				FD8DC6601F4EB0900036D193 /* Controller */,
 				FD49E9B61F4D7D13002B8736 /* Model */,
 			);
 			path = "我的";
@@ -250,8 +284,8 @@
 		FD49E9BD1F4D7E48002B8736 /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
-				FD49E9BE1F4D7E48002B8736 /* AXDTabBar.h */,
-				FD49E9BF1F4D7E48002B8736 /* AXDTabBar.m */,
+				FD246F551F4ED9B800BC757C /* LoginController */,
+				FD8DC6641F4EBB3B0036D193 /* CommonsTool */,
 				FD49E9C01F4D7E48002B8736 /* AXDTabbarController.h */,
 				FD49E9C11F4D7E48002B8736 /* AXDTabbarController.m */,
 				FD8DC6511F4EA7410036D193 /* AXDNavigationBarView.h */,
@@ -312,6 +346,42 @@
 				FD745F841F4E757A008D7086 /* UIView+FrameExt.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		FD8DC6581F4EAE290036D193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD8DC6591F4EAE380036D193 /* HomeViewController.h */,
+				FD8DC65A1F4EAE380036D193 /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD8DC65C1F4EAF890036D193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD8DC65D1F4EB07C0036D193 /* FightGroupViewController.h */,
+				FD8DC65E1F4EB07C0036D193 /* FightGroupViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD8DC6601F4EB0900036D193 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD8DC6611F4EB0BD0036D193 /* MineViewController.h */,
+				FD8DC6621F4EB0BD0036D193 /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD8DC6641F4EBB3B0036D193 /* CommonsTool */ = {
+			isa = PBXGroup;
+			children = (
+				FD8DC6651F4EBBAA0036D193 /* CommondTools.h */,
+				FD8DC6661F4EBBAA0036D193 /* CommondTools.m */,
+			);
+			path = CommonsTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,14 +583,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD8DC6501F4EA0F60036D193 /* AnimationView.m in Sources */,
+				FD8DC65F1F4EB07C0036D193 /* FightGroupViewController.m in Sources */,
 				FD8DC6561F4EA7960036D193 /* BaseViewController.m in Sources */,
+				FD8DC6671F4EBBAA0036D193 /* CommondTools.m in Sources */,
+				FD246F581F4EDA0800BC757C /* LoginViewController.m in Sources */,
 				FD745FA71F4E757A008D7086 /* UIView+FrameExt.m in Sources */,
 				FD8DC6531F4EA7410036D193 /* AXDNavigationBarView.m in Sources */,
+				FD8DC66A1F4EBFFD0036D193 /* ViewController.m in Sources */,
+				FD8DC6631F4EB0BD0036D193 /* MineViewController.m in Sources */,
 				FD49E9251F4D6245002B8736 /* ACHProject.xcdatamodeld in Sources */,
+				FD8DC65B1F4EAE380036D193 /* HomeViewController.m in Sources */,
 				FD49E9311F4D6B8B002B8736 /* AppDelegate.m in Sources */,
 				FD49E9321F4D6B8B002B8736 /* main.m in Sources */,
-				FD49E9C21F4D7E48002B8736 /* AXDTabBar.m in Sources */,
 				FD49E9C31F4D7E48002B8736 /* AXDTabbarController.m in Sources */,
+				FD246F5B1F4EDA1A00BC757C /* RegistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
