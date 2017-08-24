@@ -47,7 +47,7 @@
      [self addChildViewControll:[[UIViewController alloc]init] title:@"我的" image:@"tabBar_me_icon_27x27_" selectImage:@"tabBar_me_click_icon_27x27_"];
     
     /****更换自定义tabbar****/
-    [self setValue:[[AXDTabBar alloc] init] forKey:@"tabBar"];//KVC
+//    [self setValue:[[AXDTabBar alloc] init] forKey:@"tabBar"];//KVC
     
 }
 
@@ -71,8 +71,6 @@
     [self addChildViewController:vc];
     
 }
-
-
 
 
 
