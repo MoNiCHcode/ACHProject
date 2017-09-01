@@ -12,7 +12,7 @@
 #import "FightGroupViewController.h"
 #import "MineViewController.h"
 
-#import "AXDTabbarController.h"
+
 #import "AppDelegate.h"
 
 @implementation CommondTools
@@ -33,22 +33,22 @@
     UINavigationController* nav3=[[UINavigationController alloc]initWithRootViewController:lively];
     nav3.navigationBar.hidden=YES;
     
-    AppDelegate* delegate=[UIApplication sharedApplication].delegate;
-    
-    AXDTabbarController* navBarVC=delegate.axdTabBarController;
-    navBarVC.viewControllers=@[nav1,nav2,nav3];
-    navBarVC.titleArray=@[@"首 页",@"拼 团",@"我 的"];
-    navBarVC.selectTitleArray=@[@"",@"发帖",@"我的"];
-    navBarVC.imagesArray=@[@"首页未选中",@"团-未选中",@"我的-未选中"];
-    navBarVC.selectImagesArray=@[@"首页-选中",@"团",@"矢量智能对象7"];
-    navBarVC.itemWidth=25;
-    navBarVC.selectColor= kColor_main;
-//    [navBarVC setRedNumLableWithNumber:15 andIndex:0];
-//    [navBarVC showRedPoint:YES andIndex:2];
-    [navBarVC appointTabBarItemWithIndex:0];
-    
-    UIWindow* window=delegate.window;
-    window.rootViewController=navBarVC;
+//    AppDelegate* delegate=[UIApplication sharedApplication].delegate;
+//    
+//    AXDTabbarController* navBarVC=delegate.axdTabBarController;
+//    navBarVC.viewControllers=@[nav1,nav2,nav3];
+//    navBarVC.titleArray=@[@"首 页",@"拼 团",@"我 的"];
+//    navBarVC.selectTitleArray=@[@"",@"发帖",@"我的"];
+//    navBarVC.imagesArray=@[@"首页未选中",@"团-未选中",@"我的-未选中"];
+//    navBarVC.selectImagesArray=@[@"首页-选中",@"团",@"矢量智能对象7"];
+//    navBarVC.itemWidth=25;
+//    navBarVC.selectColor= kColor_main;
+////    [navBarVC setRedNumLableWithNumber:15 andIndex:0];
+////    [navBarVC showRedPoint:YES andIndex:2];
+//    [navBarVC appointTabBarItemWithIndex:0];
+//    
+//    UIWindow* window=delegate.window;
+//    window.rootViewController=navBarVC;
     
 }
 

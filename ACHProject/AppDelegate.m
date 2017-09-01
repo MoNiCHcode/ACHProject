@@ -7,13 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import "AXDTabbarController.h"
-#import "AnimationView.h"
-#import "AXDTabbarController.h"
 
-#import "HomeViewController.h"
-#import "FightGroupViewController.h"
-#import "MineViewController.h"
+#import "AnimationView.h"
+
+#import "BaseNavigationController.h"
+#import "RootTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -24,41 +22,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    _axdTabBarController=[[AXDTabbarController alloc]init];
-//    self.window.rootViewController = _axdTabBarController;
-    
-    
-    //首页
-    HomeViewController* indexVC=[[HomeViewController alloc]init];
-    UINavigationController* nav1=[[UINavigationController alloc]initWithRootViewController:indexVC];
-    nav1.navigationBar.hidden=YES;
-    //社区
-    FightGroupViewController* Community=[[FightGroupViewController alloc]init];
-    UINavigationController* nav2=[[UINavigationController alloc]initWithRootViewController:Community];
-    nav2.navigationBar.hidden=YES;
-    //凑热闹
-    MineViewController* lively=[[MineViewController alloc]init];
-    UINavigationController* nav3=[[UINavigationController alloc]initWithRootViewController:lively];
-    nav3.navigationBar.hidden=YES;
-    
- 
-    
-    
-    _axdTabBarController.viewControllers=@[nav1,nav2,nav3];
-    _axdTabBarController.titleArray=@[@"首页",@"拼团",@"我的"];
-    _axdTabBarController.selectTitleArray=@[@"首页",@"拼团",@"我的"];
-    _axdTabBarController.imagesArray=@[@"首页未选中",@"团-未选中",@"我的-未选中"];
-    _axdTabBarController.selectImagesArray=@[@"首页-选中",@"团",@"矢量智能对象7"];
-    _axdTabBarController.itemWidth=25;
-    _axdTabBarController.selectColor= kColor_main;
 
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = _axdTabBarController;
-    
-    
-    
-    
+    BaseNavigationController *nav =[[BaseNavigationController alloc]initWithRootViewController:[RootTabBarController sharedTabBarController]];
+    self.window.rootViewController = nav;
     
     [AnimationView sharedWelcomeView];
     

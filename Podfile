@@ -7,7 +7,9 @@ platform:ios,’8.0’
    pod 'YYCache', '~> 1.0.4'
    pod 'MJRefresh', '~> 3.1.12'
    pod 'SDCycleScrollView', '~> 1.66'
-
+   pod 'IQKeyboardManager','~>3.3.7'
+   pod 'SGAdvertScrollView'
+   
 
 end
 

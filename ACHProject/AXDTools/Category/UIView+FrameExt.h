@@ -17,4 +17,10 @@
 @property (nonatomic ,assign)CGFloat axd_centerX;
 @property (nonatomic ,assign)CGFloat axd_centerY;
 
+@property (nonatomic, assign) CGFloat left;
+@property (nonatomic, assign) CGFloat right;
+
+@property (nonatomic, assign) CGFloat top;
+@property (nonatomic, assign) CGFloat bottom;
+
 @end

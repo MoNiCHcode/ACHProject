@@ -7,7 +7,7 @@
 //
 
 #import "MineViewController.h"
-
+#import "LoginViewController.h"
 @interface MineViewController ()
 
 @end
@@ -17,6 +17,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor cyanColor];
+    
+    UIButton *goLogin = [UIButton buttonWithType:UIButtonTypeCustom];
+    goLogin.axd_x = 100;
+    goLogin.axd_y = 100;
+    goLogin.axd_height = 100;
+    goLogin.axd_width = 100;
+    [goLogin addTarget:self action:@selector(goLoginClick) forControlEvents:UIControlEventTouchUpInside];
+    goLogin.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:goLogin];
+    
+}
+
+-(void)goLoginClick
+{
+//    [self.navigationController pushViewController:[LoginViewController new] animated:YES];
+    [self presentViewController:[LoginViewController new] animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,13 +1,13 @@
 //
 //  LoginViewController.h
-//  ACHProject
+//  CFArchitecture
 //
-//  Created by chenxiaohong on 2017/8/24.
-//  Copyright © 2017年 爱享到. All rights reserved.
+//  Created by Mr.Guo on 2017/8/28.
+//  Copyright © 2017年 Mr.Guo. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
-@interface LoginViewController : BaseViewController
+@interface LoginViewController : UIViewController
 
 @end

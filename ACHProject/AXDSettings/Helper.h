@@ -10,11 +10,11 @@
 #define Helper_h
 
 
-/****打印*****/
-#ifndef DEBUG
-#define AXDLog(...) NSLog(__VA_ARGS__)
+// 调试
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((fmt), ##__VA_ARGS__);
 #else
-#define AXDLog(...)
+# define DLog(...);
 #endif
 
 /****颜色*****/
@@ -29,6 +29,8 @@
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16)) / 255.0 \
 green:((float)((rgbValue & 0xFF00) >> 8)) / 255.0 \
 blue:((float)(rgbValue & 0xFF)) / 255.0 alpha:1.0]
+
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 #define RGB(r,g,b)     [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:1.f]
 

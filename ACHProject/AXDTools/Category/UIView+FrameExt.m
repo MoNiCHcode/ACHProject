@@ -87,4 +87,58 @@
     self.center = center;
 }
 
+-(CGFloat)right
+{
+    return CGRectGetMaxX([self frame]);
+}
+
+-(void)setRight:(CGFloat)right
+{
+    CGRect frame = [self frame];
+    frame.origin.x = right - frame.size.width;
+    
+    [self setFrame:frame];
+}
+
+
+- (CGFloat)left;
+{
+    return CGRectGetMinX([self frame]);
+}
+
+- (void)setLeft:(CGFloat)x;
+{
+    CGRect frame = [self frame];
+    frame.origin.x = x;
+    [self setFrame:frame];
+}
+
+
+- (CGFloat)top;
+{
+    return CGRectGetMinY([self frame]);
+}
+
+- (void)setTop:(CGFloat)y;
+{
+    CGRect frame = [self frame];
+    frame.origin.y = y;
+    [self setFrame:frame];
+}
+
+- (CGFloat)bottom;
+{
+    return CGRectGetMaxY([self frame]);
+}
+
+- (void)setBottom:(CGFloat)bottom;
+{
+    CGRect frame = [self frame];
+    frame.origin.y = bottom - frame.size.height;
+    
+    [self setFrame:frame];
+}
+
+
+
 @end
