@@ -14,6 +14,7 @@
 #import "HomeToolView.h"
 
 #import "AdvertiseCell.h"
+#import "MerchaintViewController.h"
 
 @interface HomeClassViewController ()<UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate>
 {
@@ -27,49 +28,45 @@
 
 @implementation HomeClassViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-   
-    _mainDataArr = [NSMutableArray array];
-//    [self.view addSubview:_mainTabView];
-    
-    _mainTabView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kBaseWidth, kBaseHeight - kbaseTabBarHeight ) style:UITableViewStyleGrouped];
-    _mainTabView.rowHeight = UITableViewAutomaticDimension;
-    _mainTabView.contentInset = UIEdgeInsetsMake(0, 0, kbaseTabBarHeight + 30, 0);
-    
-    _mainTabView.estimatedRowHeight = 50;
-    _mainTabView.delegate=self;
-    _mainTabView.dataSource=self;
-    _mainTabView.separatorStyle=NO;
-    [self.view addSubview:_mainTabView];
+-(UITableView *)mainTabView
+{
+    if(!_mainTabView){
+        _mainTabView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, kBaseWidth,kBaseHeight -kbaseTabBarHeight) style:UITableViewStyleGrouped];
+        _mainTabView.delegate=self;
+        _mainTabView.dataSource=self;
+        _mainTabView.separatorStyle=NO;
+        _mainTabView.estimatedRowHeight = 100;
+        _mainTabView.contentInset = UIEdgeInsetsMake(0, 0, 100, 0);
+        _mainTabView.backgroundColor = [UIColor orangeColor];
+        
+    }
     
     //注册cell
     [_mainTabView registerNib:[UINib nibWithNibName:@"PopularStoreCell" bundle:nil] forCellReuseIdentifier:@"PopularCell"];
     
     [_mainTabView registerNib:[UINib nibWithNibName:@"FastidiousChoiseCell" bundle:nil] forCellReuseIdentifier:@"FastidiousChoiseCell"];
     
-     [_mainTabView registerNib:[UINib nibWithNibName:@"RushBuyCell" bundle:nil] forCellReuseIdentifier:@"RushBuyCell"];
+    [_mainTabView registerNib:[UINib nibWithNibName:@"RushBuyCell" bundle:nil] forCellReuseIdentifier:@"RushBuyCell"];
+    
+    [_mainTabView registerNib:[UINib nibWithNibName:@"AdvertiseCell" bundle:nil] forCellReuseIdentifier:@"AdvertiseCell"];
 
-     [_mainTabView registerNib:[UINib nibWithNibName:@"AdvertiseCell" bundle:nil] forCellReuseIdentifier:@"AdvertiseCell"];
+    
+    return _mainTabView;
 }
 
 
-//-(UITableView *)mainTableView
-//{
-//    if(!_mainTabView){
-//        _mainTabView=[[UITableView alloc]initWithFrame:CGRectMake(0, kBaseNavHeight, kBaseWidth,kBaseHeight) style:UITableViewStylePlain];
-//        _mainTabView.delegate=self;
-//        _mainTabView.dataSource=self;
-//        _mainTabView.separatorStyle=NO;
-//        _mainTabView.backgroundColor = [UIColor orangeColor];
-//       
-//    }
-//    
-//   
-//    return _mainTabView;
-//}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    _mainDataArr = [NSMutableArray array];
+    [self.view addSubview:self.mainTabView];
+
+}
 
 
+
+#pragma mark - delegate and dataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -83,7 +80,7 @@
     }else {
         return 1;
     }
-   
+    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 
@@ -95,7 +92,7 @@
         //精选推荐
         FastidiousChoiseCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FastidiousChoiseCell"];
         return cell;
-    
+        
     }else if (indexPath.section == 1){
         //抢购秒杀
         RushBuyCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RushBuyCell"];
@@ -150,18 +147,18 @@
         _cycleScrollerView.autoScrollTimeInterval = 3.;// 自动滚动时间间隔
         _cycleScrollerView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;// 翻页 右下角
         _cycleScrollerView.titleLabelBackgroundColor = [UIColor clearColor];// 图片对应的标题的 背景色。（因为没有设标题）
-        
+
         // ok xib 自动布局都可以。还是很不错的。
         [SDCycleScrollView clearImagesCache];// 清除缓存。
-       
         
-       
+        
+        
         HomeToolView *tool = [HomeToolView sharedToolViewModels:nil complection:^(NSInteger index) {
             //index 点击选中的item位置 ; 接口放回item 数据的个数(不包括 集中采购, 和全部)
             //            [__weakSelf gotoVC:index allItemNum:_mainModel.category_nav.count + 2];
             
             //如果加上 集中采购就换成上面注释的那句
-//            [WS(self) gotoVC:index allItemNum:_mainModel.category_nav.count + 1];
+            //            [WS(self) gotoVC:index allItemNum:_mainModel.category_nav.count + 1];
         }];
         _tool = tool;
         _tool.top = _cycleScrollerView.bottom;
@@ -180,18 +177,15 @@
         return nil;
     }
     
- 
-}
-//- (nullable UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)
-//{
-//    return nil;
-//}
-
-#pragma mark - 广告滚动视图
--(void)setUpSGAdvertScrollView
-{
     
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [self.navigationController pushViewController:[MerchaintViewController new] animated:YES];
+    
+}
+
 
 
 
@@ -201,13 +195,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

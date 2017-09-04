@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "YJSliderView.h"
 #import "HomeClassViewController.h"
 #import "HYPageView.h"
 #import "global.h"
@@ -24,7 +23,6 @@
 
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) UITableView *mainTabView;
-@property (nonatomic, strong) YJSliderView *sliderView;
 @property (nonatomic,strong)HYPageView *HYtitleView;
 @property (nonatomic, strong) NSMutableArray *contentArray;
 @property (nonatomic, strong) NSArray *titleArray;
@@ -143,7 +141,7 @@
 
 #pragma mark - 轮播图
 - (HYPageView *)HYtitleView {
-    HYPageView *pageView = [[HYPageView alloc] initWithFrame:CGRectMake(0, kBaseNavHeight, kBaseWidth , kBaseHeight - 50) withTitles:@[@"美食",@"丽人",@"娱乐",@"汽车服务"] withViewControllers:@[@"HomeClassViewController",@"LirenViewController",@"EntertainmentViewController",@"ServiceViewController",] withParameters:nil];
+    HYPageView *pageView = [[HYPageView alloc] initWithFrame:CGRectMake(0, kBaseNavHeight, self.view.axd_width , kBaseHeight - kbaseTabBarHeight) withTitles:@[@"美食",@"丽人",@"娱乐",@"汽车服务"] withViewControllers:@[@"HomeClassViewController",@"LirenViewController",@"EntertainmentViewController",@"ServiceViewController",] withParameters:nil];
     
     pageView.selectedColor = kColor_main;
     pageView.unselectedColor = [UIColor blackColor];

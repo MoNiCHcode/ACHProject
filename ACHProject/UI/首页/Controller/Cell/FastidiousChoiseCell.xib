@@ -13,36 +13,36 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FastidiousChoiseCell" rowHeight="210" id="KGk-i7-Jjw" customClass="FastidiousChoiseCell">
-            <rect key="frame" x="0.0" y="0.0" width="325" height="210"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FastidiousChoiseCell" rowHeight="186" id="KGk-i7-Jjw" customClass="FastidiousChoiseCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="186"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="325" height="210"/>
+                <rect key="frame" x="0.0" y="0.0" width="322" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="矩形-10-拷贝" translatesAutoresizingMaskIntoConstraints="NO" id="aUl-A5-gg7" userLabel="右上Image View">
-                        <rect key="frame" x="171.5" y="10" width="138.5" height="72.5"/>
+                        <rect key="frame" x="170" y="10" width="137" height="71.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="aUl-A5-gg7" secondAttribute="height" multiplier="346:180" id="ntB-Ag-IkM"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="矩形-10-拷贝-2" translatesAutoresizingMaskIntoConstraints="NO" id="Meu-iH-6IX" userLabel="右下Image View">
-                        <rect key="frame" x="171.5" y="92.5" width="138.5" height="80"/>
+                        <rect key="frame" x="170" y="91.5" width="137" height="79"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Meu-iH-6IX" secondAttribute="height" multiplier="346:200" id="HPY-06-034"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="矩形-10" translatesAutoresizingMaskIntoConstraints="NO" id="XqK-yt-E3A" userLabel="左Image View">
-                        <rect key="frame" x="15" y="10" width="146.5" height="162.5"/>
+                        <rect key="frame" x="15" y="10" width="145" height="160.5"/>
                     </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Meu-iH-6IX" firstAttribute="width" secondItem="aUl-A5-gg7" secondAttribute="width" id="1JI-cD-IdH"/>
+                    <constraint firstAttribute="bottom" secondItem="XqK-yt-E3A" secondAttribute="bottom" constant="15" id="1zu-n0-C43"/>
                     <constraint firstItem="Meu-iH-6IX" firstAttribute="leading" secondItem="XqK-yt-E3A" secondAttribute="trailing" constant="10" id="2P5-Cr-4ch"/>
                     <constraint firstItem="XqK-yt-E3A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5Yc-Ik-hMA"/>
                     <constraint firstItem="aUl-A5-gg7" firstAttribute="leading" secondItem="XqK-yt-E3A" secondAttribute="trailing" constant="10" id="6l5-Pa-Nr8"/>
                     <constraint firstItem="XqK-yt-E3A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DZw-Y7-dsy"/>
-                    <constraint firstItem="XqK-yt-E3A" firstAttribute="bottom" secondItem="Meu-iH-6IX" secondAttribute="bottom" id="Rd0-rF-RY4"/>
                     <constraint firstAttribute="bottom" secondItem="Meu-iH-6IX" secondAttribute="bottom" constant="15" id="U56-uL-yHO"/>
                     <constraint firstItem="Meu-iH-6IX" firstAttribute="top" secondItem="aUl-A5-gg7" secondAttribute="bottom" constant="10" id="aaB-wA-Wu9"/>
                     <constraint firstAttribute="trailing" secondItem="aUl-A5-gg7" secondAttribute="trailing" constant="15" id="dS8-Ux-rCJ"/>
@@ -51,7 +51,7 @@
                     <constraint firstAttribute="trailing" secondItem="Meu-iH-6IX" secondAttribute="trailing" constant="15" id="z5U-QQ-l87"/>
                 </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="6.5" y="-72"/>
+            <point key="canvasLocation" x="5" y="-84"/>
         </tableViewCell>
     </objects>
     <resources>
