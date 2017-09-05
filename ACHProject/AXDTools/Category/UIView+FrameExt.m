@@ -10,6 +10,19 @@
 
 @implementation UIView (FrameExt)
 
+- (void)setAxd_size:(CGSize)axd_size;
+{
+    CGPoint origin = [self frame].origin;
+    
+    [self setFrame:CGRectMake(origin.x, origin.y, axd_size.width, axd_size.height)];
+}
+
+- (CGSize)axd_size;
+{
+    return [self frame].size;
+}
+
+
 -(CGFloat)axd_x
 {
     return self.frame.origin.x;

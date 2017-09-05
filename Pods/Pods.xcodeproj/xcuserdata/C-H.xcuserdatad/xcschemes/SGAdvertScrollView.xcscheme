@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '179D62372A078100A023158BEE5AA49C'
+               BlueprintIdentifier = 'F8D17A7B4DAB7274250A8DA0264D2ACE'
                BlueprintName = 'SGAdvertScrollView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libSGAdvertScrollView.a'>

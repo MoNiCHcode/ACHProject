@@ -10,6 +10,7 @@
 
 @interface UIView (FrameExt)
 /**assign*/
+@property (nonatomic ,assign)CGSize  axd_size;
 @property (nonatomic ,assign)CGFloat axd_x;
 @property (nonatomic ,assign)CGFloat axd_y;
 @property (nonatomic ,assign)CGFloat axd_width;

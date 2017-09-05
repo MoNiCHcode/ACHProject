@@ -96,7 +96,7 @@
     }];
 }
 
-// 请求参数RSA加密cx
+// 请求参数RSA加密
 + (NSMutableDictionary *)creatMd5SignParamDict:(NSDictionary *)dict{
     time_t now;
     time(&now);
@@ -105,19 +105,19 @@
     NSString *secret_key = @"O8tImgCcf*XgObVqLSbg2DoH4XM6$0to";
     
     NSMutableDictionary *paramDict = [NSMutableDictionary dictionaryWithDictionary:dict];
-//    NSMutableDictionary *paramDict = @{}.mutableCopy;
     [paramDict setObject:nonce_str forKey:@"nonce_str"];
     [paramDict setObject:time_stamp forKey:@"timestamp"];
     [paramDict setObject:secret_key forKey:@"secret_key"];
     [paramDict setObject:@"ios" forKey:@"client"];
     NSString *params = [[self class] createMd5Sign:paramDict];
 
-//    NSLog(@"%@",paramDict);
+    
     
     NSString *sign = [[self class] encrytRSAWith:params];
     
     [paramDict removeObjectForKey:@"secret_key"];
     [paramDict setObject:sign forKey:@"sign"];
+    
     
     return paramDict;
 }
@@ -149,7 +149,6 @@
     }];
     //拼接字符串
     for (NSString *categoryId in sortedArray) {
-        
 //        if (![[dict objectForKey:categoryId] isKindOfClass:[NSString class]] && ![dict objectForKey:categoryId]) {
 //            [contentString appendFormat:@"%@=%@&", categoryId, [dict objectForKey:categoryId]];
 //            
@@ -161,8 +160,6 @@
 //        {
 //            [contentString appendFormat:@"%@=%@&", categoryId, [dict objectForKey:categoryId]];
 //        }
-        
-        
         if (![categoryId isEqualToString:@"sign"]
             && ![categoryId isEqualToString:@"secret_key"]
             )
@@ -177,7 +174,6 @@
     NSString *md5Sign = [[self class] md5:contentString];
     
     //输出Debug Info
-    NSLog(@"%@",md5Sign.lowercaseString);
     
     return md5Sign.lowercaseString;
 }

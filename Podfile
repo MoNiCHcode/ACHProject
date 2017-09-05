@@ -9,6 +9,7 @@ platform:ios,’8.0’
    pod 'SDCycleScrollView', '~> 1.66'
    pod 'IQKeyboardManager','~>3.3.7'
    pod 'SGAdvertScrollView'
+   pod 'MBProgressHUD', '~> 1.0.0'
    
 
 end
